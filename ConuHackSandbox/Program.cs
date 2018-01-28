@@ -19,8 +19,8 @@ namespace ConuHackSandbox
 
             //readTwitterDMS();
             //writeTwitterDMS();
-            
-            List<News> news = getArticles();
+
+            // List<News> news = getArticles();
 
             string ConsumerKey = "vsuhigNC283qd0EeG8lum8Pun",
                ConsumerKeySecret = "bzGmjQdKeKxbZMSRae5iYTRrTW5C9tuJ1pwQzQvMkhkiXFh8Kw",
@@ -34,24 +34,27 @@ namespace ConuHackSandbox
                 AccessTokenSecret
                 );
 
+            writeTwitterDMS();
+            /*
+                        var response2 = "";
+                        var startTimeSpan = TimeSpan.Zero;
+                        var periodTimeSpan = TimeSpan.FromMinutes(7);
 
-            var response2 = "";
-            var startTimeSpan = TimeSpan.Zero;
-            var periodTimeSpan = TimeSpan.FromMinutes(7);
+                       // var periodTimeSpan = TimeSpan.FromSeconds(7);
 
-            var timer = new System.Threading.Timer((e) =>
-            {
-                News item = news[0];
-                news.Remove(item); 
-                response2 = twitter.Tweet(item.Url).Result;
+                        var timer = new System.Threading.Timer((e) =>
+                        {
+                            News item = news[0];
+                            news.Remove(item); 
+                            response2 = twitter.Tweet(item.Url).Result;
 
-                if (news.Count < 2)
-                    news = getArticles(); 
+                            if (news.Count < 2)
+                                news = getArticles(); 
 
-            }, null, startTimeSpan, periodTimeSpan);
-
+                        }, null, startTimeSpan, periodTimeSpan);
+                        */
             Console.ReadKey();
-            
+
 
         }
 
@@ -61,30 +64,22 @@ namespace ConuHackSandbox
             String url = "https://newsapi.org/v2/top-headlines?sources=google-news&apiKey=1430a5758123471494dbbf502e28a873";
             String response = req.makeGetHttpRequest(url);
             List<News> news = req.getArticles(response);
-            return news; 
+            return news;
         }
 
         private static void writeTwitterDMS()
         {
-            Requester requester = new Requester();
-            string response = requester.makeGetHttpRequest("https://api.twitter.com/1.1/followers/ids.json");
-            
 
-            SendDirectMessageOptions options = new SendDirectMessageOptions();
-            //options.UserId = J
-            options.Text = "dm messages";
-            TwitterService service = new TwitterService(ConsumerKey, ConsumerKeySecret,AccessToken,AccessTokenSecret);
-            TwitterDirectMessage dm = service.SendDirectMessage(options);
-
+            var twitter = new Twitter(
+                ConsumerKey,
+                ConsumerKeySecret,
+                AccessToken,
+                AccessTokenSecret
+                );
+            var response = twitter.sendMessages("894821884822519808", "wassup").Result;
+            Console.WriteLine(response);
 
         }
 
-        private static void readTwitterDMS()
-        {
-            TwitterService service = new TwitterService(ConsumerKey, ConsumerKeySecret, AccessToken, AccessTokenSecret);
-            var directMessagesList = service.ListDirectMessagesReceived(new ListDirectMessagesReceivedOptions { Count = 200 });
-
-            int i = 0;
-        }
     }
 }

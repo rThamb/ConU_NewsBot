@@ -42,10 +42,23 @@ namespace ConuHackSandbox
             var data = new Dictionary<string, string> {
             { "status", text },
             { "trim_user", "1" }
-        };
+            };
 
             return SendRequest("statuses/update.json", data);
         }
+
+        public Task<string> sendMessages(string id, string text)
+        {
+            var data = new Dictionary<string, string> {
+                {"user_id", id },
+                {"text", text}
+
+            };
+
+            return SendRequest("direct_messages/new.json", data);
+        }
+
+
 
         Task<string> SendRequest(string url, Dictionary<string, string> data)
         {
@@ -126,5 +139,9 @@ namespace ConuHackSandbox
                 return respBody;
             }
         }
+
+
+
+
     }
 }
