@@ -43,7 +43,7 @@ C:\Users\merik\Desktop\BrownMamba\ConU_NewsBot\ConuHackSandbox\bin\Debug\Hammock
 C:\Users\merik\Desktop\BrownMamba\ConU_NewsBot\ConuHackSandbox\bin\Debug\Newtonsoft.Json.xml
 C:\Users\merik\Desktop\BrownMamba\ConU_NewsBot\ConuHackSandbox\bin\Debug\System.Diagnostics.DiagnosticSource.xml
 C:\Users\merik\Desktop\BrownMamba\ConU_NewsBot\ConuHackSandbox\bin\Debug\TweetSharp.pdb
-C:\Users\merik\Desktop\BrownMamba\ConU_NewsBot\ConuHackSandbox\obj\Debug\ConuHackSandbox.csprojResolveAssemblyReference.cache
 C:\Users\merik\Desktop\BrownMamba\ConU_NewsBot\ConuHackSandbox\obj\Debug\ConuHackSandbox.csproj.CoreCompileInputs.cache
 C:\Users\merik\Desktop\BrownMamba\ConU_NewsBot\ConuHackSandbox\obj\Debug\ConuHackSandbox.exe
 C:\Users\merik\Desktop\BrownMamba\ConU_NewsBot\ConuHackSandbox\obj\Debug\ConuHackSandbox.pdb
+C:\Users\merik\Desktop\BrownMamba\ConU_NewsBot\ConuHackSandbox\obj\Debug\ConuHackSandbox.csprojResolveAssemblyReference.cache
