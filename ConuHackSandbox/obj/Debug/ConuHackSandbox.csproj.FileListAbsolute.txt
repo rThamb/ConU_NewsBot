@@ -1,0 +1,12 @@
+C:\Users\Home\Desktop\ConuHackSandbox\ConuHackSandbox\bin\Debug\ConuHackSandbox.exe.config
+C:\Users\Home\Desktop\ConuHackSandbox\ConuHackSandbox\bin\Debug\ConuHackSandbox.exe
+C:\Users\Home\Desktop\ConuHackSandbox\ConuHackSandbox\bin\Debug\ConuHackSandbox.pdb
+C:\Users\Home\Desktop\ConuHackSandbox\ConuHackSandbox\obj\Debug\ConuHackSandbox.csprojResolveAssemblyReference.cache
+C:\Users\Home\Desktop\ConuHackSandbox\ConuHackSandbox\obj\Debug\ConuHackSandbox.exe
+C:\Users\Home\Desktop\ConuHackSandbox\ConuHackSandbox\obj\Debug\ConuHackSandbox.pdb
+C:\Users\Home\Desktop\ConuHackSandbox\ConuHackSandbox\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Home\Desktop\ConuHackSandbox\ConuHackSandbox\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Home\Desktop\ConuHackSandbox\ConuHackSandbox\bin\Debug\Hammock.ClientProfile.dll
+C:\Users\Home\Desktop\ConuHackSandbox\ConuHackSandbox\bin\Debug\TweetSharp.dll
+C:\Users\Home\Desktop\ConuHackSandbox\ConuHackSandbox\bin\Debug\Hammock.ClientProfile.pdb
+C:\Users\Home\Desktop\ConuHackSandbox\ConuHackSandbox\bin\Debug\TweetSharp.pdb
